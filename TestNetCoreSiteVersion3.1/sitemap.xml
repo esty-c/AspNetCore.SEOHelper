@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://codingwithesty.com/</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/tag?tagname=Asp.Net%20Core</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/about</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/contact</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/serilog-mongodb-in-asp-net-core</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/logging-in-asp-net-core</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/robots-txt-in-asp-net-core</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/versioning-asp.net-core-apiIs-with-swagger</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/configuring-swagger-asp-net-core-web-api</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/asp-net-core-web-api-versioning</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/importing-swagger-apis-into-postman</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/tag?tagname=databae</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://codingwithesty.com/tag?tagname=tricks</loc>
+  <lastmod>2020-05-07T07:32:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
