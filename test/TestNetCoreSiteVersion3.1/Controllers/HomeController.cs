@@ -20,6 +20,8 @@ namespace TestNetCoreSiteVersion3._1.Controllers
 
         public IActionResult Index()
         {
+
+           
             return View();
         }
 
