@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AspNetCore.SEOHelper\AspNetCore.SEOHelper.csproj" />
+    <ProjectReference Include="..\..\AspNetCore.SEOHelper\AspNetCore.SEOHelper.csproj" />
   </ItemGroup>
 
 

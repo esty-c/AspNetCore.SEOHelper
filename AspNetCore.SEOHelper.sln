@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{88ECAC87-D09
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5E886FB6-3735-47F7-A210-9E6531B62415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetCoreSiteVersion3.1", "TestNetCoreSiteVersion3.1\TestNetCoreSiteVersion3.1.csproj", "{BD2D8CFD-5234-44F3-A6D0-F40D88E8A3C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNetCoreSiteVersion3.1", "test\TestNetCoreSiteVersion3.1\TestNetCoreSiteVersion3.1.csproj", "{BD2D8CFD-5234-44F3-A6D0-F40D88E8A3C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
