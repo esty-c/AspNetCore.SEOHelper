@@ -1,12 +1,11 @@
 ﻿using AspNetCore.SEOHelper.Sitemap;
+using FluentAssertions;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
-using FluentAssertions;
+
 namespace AspNetCore.SEOHelper.Test
 {
-
     public class SitemapDocumentTest
     {
         [Fact]
@@ -15,7 +14,7 @@ namespace AspNetCore.SEOHelper.Test
             //arrange
             List<SitemapNode> list = new List<SitemapNode>();
 
-            list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/serilog-mongodb-in-asp-net-core",Frequency= SitemapFrequency.Daily });
+            list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/serilog-mongodb-in-asp-net-core", Frequency = SitemapFrequency.Daily });
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/logging-in-asp-net-core", Frequency = SitemapFrequency.Yearly });
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.7, Url = "https://codingwithesty.com/robots-txt-in-asp-net-core", Frequency = SitemapFrequency.Monthly });
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.5, Url = "https://codingwithesty.com/versioning-asp.net-core-apiIs-with-swagger", Frequency = SitemapFrequency.Weekly });
@@ -28,8 +27,6 @@ namespace AspNetCore.SEOHelper.Test
 
             //  assert
             items.Count.Should().Be(5);
-
         }
-
     }
 }

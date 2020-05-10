@@ -4,8 +4,9 @@ namespace AspNetCore.SEOHelper
 {
     public static class SEOFriendlyURLExtension
     {
-        public static string ToSEOQueryString(this string title, bool remapToAscii = false, int maxlength = 80)
+        public static string ToSEOQueryString(this string title, int maxlength = 80)
         {
+            bool remapToAscii = true;
             if (title == null)
             {
                 return string.Empty;
@@ -83,6 +84,7 @@ namespace AspNetCore.SEOHelper
         private static string RemapInternationalCharToAscii(char character)
         {
             string s = character.ToString().ToLowerInvariant();
+            
             if ("àåáâäãåąā".Contains(s))
             {
                 return "a";
@@ -127,6 +129,8 @@ namespace AspNetCore.SEOHelper
             {
                 return "g";
             }
+           
+          
             else if (character == 'ř')
             {
                 return "r";
@@ -155,6 +159,16 @@ namespace AspNetCore.SEOHelper
             {
                 return "j";
             }
+            //else if (character == 'ĵ')
+            //{
+            //    return "j";
+            //}
+
+
+            //else if ("ñ".Contains(s))
+            //{
+            //    return "n";
+            //}
             else
             {
                 return string.Empty;
