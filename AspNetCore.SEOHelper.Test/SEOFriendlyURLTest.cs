@@ -1,4 +1,5 @@
 using FluentAssertions;
+using System;
 using Xunit;
 
 namespace AspNetCore.SEOHelper.Test
@@ -8,9 +9,15 @@ namespace AspNetCore.SEOHelper.Test
         [Fact]
         public void ToSeoQueryString()
         {
+
+           
+
+
             string queryString = "Asp.Net MVC Tutorial Part-1";
             var text = queryString.ToSEOQueryString();
             text.Should().Be("asp-net-mvc-tutorial-part-1");
+
+         
         }
     }
 }
