@@ -9,7 +9,7 @@ namespace AspNetCore.SEOHelper.Sitemap
 {
     public class SitemapDocument
     {
-        public string GetSitemapDocument(IEnumerable<SitemapNode> sitemapNodes)
+        public void CreateSitemapXML(IEnumerable<SitemapNode> sitemapNodes, string directoryPath)
         {
             XNamespace xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9";
             XElement root = new XElement(xmlns + "urlset");
@@ -32,7 +32,8 @@ namespace AspNetCore.SEOHelper.Sitemap
             }
 
             XDocument document = new XDocument(root);
-            return document.ToString();
+            document.Save(Path.Combine(directoryPath, "sitemap.xml"));
+            // return document.ToString();
         }
 
         public List<SitemapNode> LoadFromFile(string folderPath)
