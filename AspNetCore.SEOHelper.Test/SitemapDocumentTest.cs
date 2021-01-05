@@ -14,7 +14,12 @@ namespace AspNetCore.SEOHelper.Test
             //arrange
             List<SitemapNode> list = new List<SitemapNode>();
 
+            list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = null, Url = "https://codingwithesty.com/serilog-mongodb-in-asp-net-core", Frequency = SitemapFrequency.Daily });
+            list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/serilog-mongodb-in-asp-net-core", Frequency = null });
+            list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = null, Url = "https://codingwithesty.com/serilog-mongodb-in-asp-net-core", Frequency = null });
+
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/serilog-mongodb-in-asp-net-core", Frequency = SitemapFrequency.Daily });
+            list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/logging-in-asp-net-core", Frequency = SitemapFrequency.Yearly });
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.8, Url = "https://codingwithesty.com/logging-in-asp-net-core", Frequency = SitemapFrequency.Yearly });
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.7, Url = "https://codingwithesty.com/robots-txt-in-asp-net-core", Frequency = SitemapFrequency.Monthly });
             list.Add(new SitemapNode { LastModified = DateTime.UtcNow, Priority = 0.5, Url = "https://codingwithesty.com/versioning-asp.net-core-apiIs-with-swagger", Frequency = SitemapFrequency.Weekly });
@@ -26,7 +31,7 @@ namespace AspNetCore.SEOHelper.Test
             var items = new SitemapDocument().LoadFromFile(baseDirectroy);
 
             //  assert
-            items.Count.Should().Be(5);
+            items.Count.Should().Be(9);
         }
     }
 }

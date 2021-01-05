@@ -66,7 +66,7 @@ namespace AspNetCore.SEOHelper.Sitemap
                 list.Add(new SitemapNode
                 {
                     Url = loc,
-                    Priority = double.Parse(priority),
+                    Priority = SitemapNodeSetter.SetPriority(priority),
                     Frequency = SitemapNodeSetter.SetFrequency(changefreq),
                     LastModified = DateTime.Parse(lastmod)
                 });
