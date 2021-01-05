@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace AspNetCore.SEOHelper.Sitemap
 {
@@ -18,6 +19,13 @@ namespace AspNetCore.SEOHelper.Sitemap
 
             SitemapFrequency frequency = (SitemapFrequency)Enum.Parse(typeof(SitemapFrequency), changefreq, true);
             return frequency;
+        }
+
+        public static double? SetPriority(string priority)
+        {
+            if (string.IsNullOrWhiteSpace(priority)) return null;
+
+            return double.Parse(priority, CultureInfo.InvariantCulture);
         }
     }
 
