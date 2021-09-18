@@ -1,5 +1,5 @@
 # AspNetCore.SEOHelper
-I have created a seperate post for this Package. Please <a href="https://codingwithesty.com/search-engine-optimization-library-for-dot-net-code-developers">click<a/> this link for details.
+Nuget package :  <a href="https://www.nuget.org/packages/AspNetCore.SEOHelper/">click<a/>
   
 Helps to create routing  robots.txt  and sitemap.xml for asp.net core project.
 
